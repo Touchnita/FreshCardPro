@@ -1,0 +1,552 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.containerfull{
+    width: 85%;
+    /* height: 100px; */
+    margin: auto;
+    height: auto;
+}
+/* start topbar  */
+.topbar{
+    margin-bottom: 15px;
+}
+.topbar .listletf{
+    display: flex;
+}
+.topbar .listletf li{
+    list-style-type: none;
+    padding: 0px 15px;
+}
+.topbar .col-6 .listright{
+    justify-content: end;
+    display: flex;
+}
+.topbar .col-6 .listright li{
+    list-style-type: none;
+}
+.topbar .col-6 .listright li a{
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+.topbar .col-6 .listright li:hover a{
+    color: rgb(105, 203, 0);
+}
+/* end topbar  */
+
+/* start headerbar */
+.col-2 .logo{
+    width: 15%;
+}
+.col-2 a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+.col-5 ul{
+    justify-content: end;
+    display: flex;
+}
+.col-5 ul li{
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.col-5 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.col-5 ul li span{
+    display: flex;
+    justify-content: center;
+}
+.col-5 ul li:hover a{
+    color: rgb(105, 203, 0);
+}
+.col-5 ul li:hover a span{
+    color: rgb(105, 203, 0);
+}
+
+/* tart headermenuba */
+.menuinline ul{
+    display: flex;
+}
+.menuinline ul li{
+    list-style-type: none;
+    padding: 10px 30px 0px 0px;
+    position: relative;
+}
+.menuinline ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+.menuinline ul li a:hover{
+    text-decoration: none;
+    color: rgb(0, 234, 0);
+    transition: 0.3s;
+}
+.sub-menu-one{
+    margin-top: 5px;
+    display: none;
+}
+.menuinline ul li:hover .sub-menu-one{
+    display: block;
+    position: absolute;
+    left:0;
+    top: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gainsboro;
+    z-index: 1;
+    transition: 0.3s;
+}
+.menuinline ul li:hover .sub-menu-one ul{
+    display: block;
+    margin: 10px;
+    padding: 0px;
+}
+.menuinline ul li:hover .sub-menu-one ul li{
+    width: 250px;
+    padding: 10px;
+    color: green;
+}
+/* .menuinline ul li .sub-menu-one ul li:hover{
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    padding: 10px;
+} */
+.fa-chevron-right{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+.fa-bars{
+    margin-right: 5px;
+    padding-top: 5px ;
+}
+
+.imgcarousel .d-block{
+    border-radius: 15px;
+    height: 530px;
+}
+
+
+/* start  row aside and main  */
+.row{
+    justify-content: space-between;
+    height: auto;
+}
+.mr{
+    width: 25%;
+    border-radius: 5px;
+}
+.mr ul{
+    list-style-type: none;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px gainsboro;
+}
+.mr ul li{
+    padding: 10px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+.mr ul li:hover a{
+    color: #000;
+}
+.mr ul li a{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Hanuman;
+    padding-top: 2px;
+    color: black;
+    font-size: 15px;
+}
+.mr span{
+    float: left;
+    padding-top: 1px;
+   padding-right: 10px;
+} 
+
+/* start mainmenu bar*/
+.mainmenu{
+    height: 47px;
+    border-bottom: 2px solid white;
+}
+.mainmenu ul{
+    display: flex;
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+.mainmenu ul li{
+    list-style-type: none;
+    padding: 10px 30px 0px 0px;
+}
+.mainmenu ul li a{
+    text-decoration: none;
+    font-family: hanuman;
+    color: white;
+}
+.mainmenu ul li:hover a{
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: black;
+    padding: 10px;
+}
+/* start card  */
+.card{
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+.card .card-img-top{
+    padding: 0px;
+    height: 150px;
+}
+.card .card-body h6{
+    font-family: moul;   
+}
+.card p{
+    font-family: hanuman;
+    text-overflow: 3;
+}
+.card a{
+    font-family: hanuman;
+}
+
+/* sub-menu-aside-one  */
+.sub-menu-aside-one ul{
+    border: none;
+    box-shadow: none;
+
+}
+.sub-menu-aside-one ul li:hover a{
+    color: rgb(0, 212, 0)
+}
+.sub-menu-aside-one ul{
+    display: none;
+}
+.menu-aside ul li:hover .sub-menu-aside-one ul{
+    border: none;
+    box-shadow: none;
+    display: block;
+}
+.menu-aside ul li:hover .sub-menu-aside-one ul li{
+    border: none;
+    box-shadow: none;
+}
+.active-web{
+    border-radius: 10px;
+}
+.active-web ul li a{
+    font-size: 14px;
+}
+.ic{
+    float: left;
+    padding-top: 1px;
+    margin-left: 10px;
+    padding-top: 3px;
+    color: green;
+} 
+.card-profile{
+    height: 220px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 15px;
+}
+.cpimg{
+    display: flex;
+}
+.cpimg img{
+    width: 25%;
+    border-radius: 50%;
+    background-color: red;
+    padding: 5px;
+}
+.cpimg .cptitle{
+    padding-left: 15px;
+}
+
+/* card main  */
+.arrival-card{
+    width: 100%;
+    max-height: 333px;
+    display: flex;
+    overflow-x: auto;
+}
+.arrival-card::-webkit-scrollbar{
+    width: 0px;
+}
+.arrival-card .card{
+    min-width: 230px;
+    height: 300px;
+    margin-right: 7px;
+}
+.img-card-arrival{
+    height: 200px;
+}
+.card .card-img-top{
+    height: 150px;
+}
+.card .card-img-top:hover{
+    box-shadow: 1px 1px 5px rgb(241, 172, 172);
+}
+.card .card-body .card-dis{
+    background-color: red;
+    width: 70px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 14px;
+}
+.card .card-body .card-text{
+    font-size: 14px;
+}
+.card .card-body .card-price{
+    font-size: 14px;
+}
+.card-star .stars{
+    float: left;
+    width: 10px;
+    height: 10px;
+    float: left;
+    color: gold;
+    margin-right: 8px;
+}
+/* .con-card-buy  */
+.con-card-buy{
+    margin: 2px;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+.con-card-buy img{
+    width: 320px;
+}
+.con-card-star .stars{
+    float: left;
+    width: 10px;
+    height: 10px;
+    float: left;
+    color: gold;
+    margin-right: 8px;
+}
+.con-card-already{
+    justify-content: space-between;
+    display: flex;
+}
+.con-card-title{
+    padding-top: 10px;
+}
+.con-card-line{
+    padding: 2px;
+    background-color: red;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 90%;
+}
+.con-card-time{
+    padding-top: 5px;   
+}
+.con-card-time-circle{
+    display: flex;
+}
+.con-card-time-circle .time-circle{
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    height: 70px;
+    margin: 5px;
+}
+.con-card-firsttime{
+    background-color: pink;
+    border-radius: 10px;
+    padding: 10px;
+    height: 45px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+.con-card-firsttime .firsttime{
+    border: 1px dotted rgb(47, 47, 240);
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.con-card-new-product{
+    display: flex;
+    justify-content: space-between;
+}
+.con-card-new-product .con-card-btn-View{
+    margin-top: 20px;   
+}
+/* new product  */
+.cards{
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+.cards .img-card{
+    padding: 0px;
+    height: 200px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+}
+
+.cards .img-card img{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+    justify-items: center;
+    margin-left: 50px;
+}
+
+.cards .img-card:hover{
+    border: 1px solid green;
+    box-shadow: 1px 1px 5px rgb(247, 77, 77);
+}
+
+
+/* .cards p{
+    font-family: hanuman;
+    text-overflow: 3;
+} */
+.cards-dis{
+    background-color: red;
+    width: 60px;
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+}
+.cards-star .starsall{
+    float: left;
+    width: 10px;
+    height: 10px;
+    float: left;
+    color: gold;
+    margin-right: 13px;
+}
+
+
+/*four card popular recipes  */
+.con-card-popular{
+    display: flex;
+    justify-content: space-between;
+}
+.main-popular-card{
+    display: flex;
+    justify-content: space-between;
+}
+.con-card-popular .con-card-btn-View-popular{
+    margin-top: 20px;
+}
+.card-popular .card-popular-img-top{
+    width: 300px;
+    border-radius: 15px;
+    height: 160px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 10px;
+}
+.card-popular-img-top .img-top{
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.card-popular-img-top:hover .img-top{
+    transform: scale(1.03);
+    
+}
+.card-popular-text{
+    height: 35px;
+}
+.card-popular-body .card-popular-price{
+    height: 80px;
+}
+
+/* start footer   */
+.mainfooter{
+    background-color: teal;
+}
+.bgfooter{
+    width: 85%;
+}
+.con-freshcard-icon{
+    display: flex;
+    padding-top: 50px;
+}
+.con-freshcard a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+}
+.con-freshcard span{
+    color: rgb(255, 255, 255);
+}
+.con-icon ul{
+    display:flex;
+}
+.con-icon ul li{
+    list-style-type: none;
+}
+.con-icon ul li:hover span{
+    color: white;
+}
+.con-hr{
+    border: 1px solid rgb(255, 255, 255);
+}
+.con-icon{
+    justify-content: end;
+    display: flex;
+}
+.con-icon span{
+    width: 20px;
+    margin-left: 20px;
+    color: black;
+}
+.list-unstyled img{
+    margin-left: 10px;
+    margin-top: -6px;
+}
+.list-unstyled a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.flex-column li a{
+    font-size: 14px;
+    color: #000;
+}
+.flex-column li:hover a{
+    font-size: 14px;
+    color: rgb(127, 250, 153);
+}
+.pb{
+    padding-top: 33px;
+}
+.mb-3 h5{
+    color: white;
+}
+.con-uls h6{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
